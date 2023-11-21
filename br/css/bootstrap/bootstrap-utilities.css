@@ -11,7 +11,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-.clearfix::after {
+ .clearfix::after {
   display: block;
   clear: both;
   content: "";
@@ -32,10 +32,10 @@
 }
 
 .link-success {
-  color: #198754;
+  color: #241987;
 }
 .link-success:hover, .link-success:focus {
-  color: #146c43;
+  color: #1a146c;
 }
 
 .link-info {
@@ -456,7 +456,7 @@
 }
 
 .border-success {
-  border-color: #198754 !important;
+  border-color: #191b87 !important;
 }
 
 .border-info {
@@ -1285,7 +1285,7 @@
 }
 
 .text-success {
-  color: #198754 !important;
+  color: #241987 !important;
 }
 
 .text-info {
@@ -1341,7 +1341,7 @@
 }
 
 .bg-success {
-  background-color: #198754 !important;
+  background-color: #3f1987 !important;
 }
 
 .bg-info {
