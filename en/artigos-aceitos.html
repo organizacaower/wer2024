@@ -24,48 +24,24 @@
 
     <!-- # Main Style Sheet -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
+  <!-- Navigation -->
+  <header class="navigation bg-tertiary">
+    <div id="navbar"></div>
 
-    <!-- navigation -->
-    <header class="navigation bg-tertiary">
-        <nav class="navbar navbar-expand-xl navbar-light text-center py-3">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img loading="preload" decoding="async" class="img-fluid" width="130" src="../images/wer/logo_wer2024-h.png" alt="WER at Buenos Aires, Argentina">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto mb-1 mb-lg-0">
-                <li class="nav-item aling-le"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                      role="button" data-bs-toggle="dropdown" aria-expanded="false">Call for Papers</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item " href="track-regular.html">Regular Research Track (WER-RT)</a></li>
-                      <li><a class="dropdown-item " href="track-requirements-tools.html">Software Requirement Tools Track (WER-SRTT)</a></li>
-                      <li><a class="dropdown-item " href="track-industry.html">Industry Track (WER-IT)</a></li>
-                      <li><a class="dropdown-item " href="track-masters-doctoral.html">Master's and Doctoral Track (WER-MDT)</a></li>
-                      <li><a class="dropdown-item " href="track-tutorial.html">Tutorial Track (WER-TT)</a></li>
-                      <li><a class="dropdown-item " href="track-journal-first.html">Journal First Track (WER-JFT)</a></li>
-                      <li><a class="dropdown-item " href="track-students.html">Student Track (WER-ST)</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"> <a class="nav-link" href="artigos-aceitos.html">Accepted Papers</a></li>
-                <li class="nav-item "> <a class="nav-link" href="programacao.html">Schedule</a></li>
-                <li class="nav-item "> <a class="nav-link" href="palestrantes.html">Keynote Speakers</a></li>
-                <li class="nav-item"><a class="nav-link" href="organizacao.html">Organization</a></li>
-                <li class="nav-item"><a class="nav-link" href="patrocinadores.html">Supporters</a></li>
-                <li class="nav-item "> <a class="nav-link" href="buenos-aires.html">Buenos Aires</a></li>
-              </ul>
-              <a class="text-primary" href="../es/index.html">ES</a> &nbsp; | &nbsp;        <a class="text-primary" href="../pt/index.html">PT</a><br/>&emsp;
-              <a  href="inscricao.html" class="btn btn-outline-primary">Registration</a>&emsp;
-            </div>
-          </div>
-        </nav>
-      </header>
-    <!-- /navigation -->
+    <script>
+      $(function(){
+        $('#navbar').load('navbar.html')
+      })
+
+      document.getElementById('change-lang').innerHTML = 'Chau'
+    </script>
+  </header>
+  <!-- /Navigation -->
 
     <br>
     <section>
@@ -81,30 +57,12 @@
                                     alt="Leslie Alexander" class="img-fluid" width="50" height="50"></a></h4>
                         <nav id="TableOfContents">
                             <ul>
-                                <li><a href="#regular-track">
-                                        <h6 class="text-success">Regular Research Track (WER-RT)</h6>
-                                    </a>
-                                </li>
-                                <li><a href="#journal-first-track">
-                                        <h6 class="text-success">Journal First Track (WER-JFT)</h6>
-                                    </a>
-                                </li>
-                                <li><a href="#masters-track">
-                                        <h6 class="text-success">Master's and Doctoral Track (WER-MDT)</h6>
-                                    </a>
-                                </li>
-                                <li><a href="#tutorial-track">
-                                    <h6 class="text-success">Tutorial Track (WER-TT)</h6>
-                                </a>
-                                </li>
-                                <li><a href="#industry-track">
-                                    <h6 class="text-success">Industry Track (WER-IT)</h6>
-                                </a>
-                                </li>
-                                <li><a href="#requirement-tools-track">
-                                    <h6 class="text-success">Software Requirements Tools Track (WER-SRTT)</h6>
-                                </a>
-                                </li>
+                                <li><a href="#regular-track" class="text-success" style="font-weight:bold">Regular Research Track (WER-RT)</a></li>
+                                <li><a href="#journal-first-track" class="text-success" style="font-weight:bold">Journal First Track (WER-JFT)</a></li>
+                                <li><a href="#masters-track" class="text-success" style="font-weight:bold">Master's and Doctoral Track (WER-MDT)</a></li>
+                                <li><a href="#tutorial-track" class="text-success" style="font-weight:bold">Tutorial Track (WER-TT)</a></li>
+                                <li><a href="#industry-track" class="text-success" style="font-weight:bold">Industry Track (WER-IT)</a></li>
+                                <li><a href="#requirement-tools-track" class="text-success" style="font-weight:bold">Software Requirements Tools Track (WER-SRTT)</a></li>
                                 <!-- <li><a href="#student-track">
                                     <h6 class="text-success">Student Track (WER-ST)</h6>
                                 </a>
@@ -138,7 +96,7 @@
                             <li><b>Modelos Visuales durante la adquisición de conocimiento: Un Mapeo Sistemático de la Literatura</b>
                                 <p><small><i>Alberto Sebastian, Graciela Hadad, Leandro Antonelli and Carlos Neil</i></small></p>
                             </li>
-                            <li><b><a href="http://www.inf.unioeste.br/">Avaliação de Acessibilidade em Aplicações Móveis: Uma Revisão Sistemática da Literatura</a></b>
+                            <li><b>Avaliação de Acessibilidade em Aplicações Móveis: Uma Revisão Sistemática da Literatura</b>
                                 <p><small><i>Gabriel Costa, Victor Santander, Vitor Gilnek and Marcos Alexandre dos Anjos</i></small></p>
                             </li>
                             <li><b>Catálogo de requisitos de sustentabilidade: Um estudo preliminar</b>
@@ -153,7 +111,7 @@
                             <li><b>Investigando o Processo de Documentação de Requisitos em Sistemas Enterprise Resource Planning (ERP)</b>
                                 <p><small><i>Marco Damo and Victor Santander</i></small></p>
                             </li>
-                            <li><b><a href="http://www.cin.ufpe.br/~jffv">Requisitos de Segurança e Privacidade em Startups: Um Estudo Empírico em uma Aplicação de Governança de Dados</a></b>
+                            <li><b>Requisitos de Segurança e Privacidade em Startups: Um Estudo Empírico em uma Aplicação de Governança de Dados</b>
                                 <p><small><i>Ewerton David Brito de Jesus, Jéssyka Vilela and Carla Silva</i></small></p>
                             </li>
                             <li><b>Desenvolvimento Ágil e Documentação de Requisitos Rumo a Práticas Mais Efetivas: Uma Revisão Sistemática</b>
@@ -162,7 +120,7 @@
                             <li><b>Unveiling Developer Perspectives: A Survey on Accessibility Practices in Software Development</b>
                                 <p><small><i>Renata Vinadé and Sabrina Marczak</i></small></p>
                             </li>
-                            <li><b><a href="http://lattes.cnpq.br/3251794528091833">Requisitos de Transparência para Engajamento de Desenvolvedores em Portais de Ecossistemas de Software</a></b>
+                            <li><b>Requisitos de Transparência para Engajamento de Desenvolvedores em Portais de Ecossistemas de Software</b>
                                 <p><small><i>Thiago Parracho, Rodrigo Zacarias, Henrique Sousa and Rodrigo Santos</i></small></p>
                             </li>
                             <li><b>Using i* for an early analysis of interoperability requirements</b>
