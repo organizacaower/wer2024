@@ -29,64 +29,19 @@
 
 <body>
 
-  <!-- navigation -->
-  <header class="navigation bg-tertiary">
-    <nav class="navbar navbar-expand-xl navbar-light text-center py-3">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img loading="preload" decoding="async" class="img-fluid" width="130" src="../images/wer/logo_wer2024-h.png"
-               alt="Wer en Buenos Aires">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
-                class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-1 mb-lg-0">
-            <li class="nav-item aling-le"> <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-              <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false">Chamadas</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  </li>
-                  <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-regular.html">Regular Research Track (WER-RT)</a>
-                  </li>
-                  <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-requirements-tools.html">Software Requirements Tools Track
-                      (WER-SRTT)</a>
-                  </li>
-                  <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-industry.html">Industry Track
-                      (WER-IT)</a>
-                  </li>
-                  <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-masters-doctoral.html">Master's and Doctoral Track
-                      (WER-MDT)</a>
-                  </li>
-                  <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-tutorial.html">Tutorial Track (WER-TT)</a>
-                  </li>
-                  <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-journal-first.html">Journal First Track (WER-JFT)</a>
-                  </li>
-                  <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-students.html">Student Track (WER-ST)</a>
-                  </li>
-                </ul>
-              </li>
-              </li>
-              <li class="nav-item "> <a class="nav-link" href="../pt/artigos-aceitos.html">Artigos aceitos</a>
-                <li class="nav-item "> <a class="nav-link" href="../pt/programacao.html">Programação</a>
-              <li class="nav-item "> <a class="nav-link" href="https://organizacaower.github.io/wer2024/pt/palestrantes.html">Palestrantes</a>
-              </li>
-              <li class="nav-item "> <a class="nav-link" href="../pt/organizacao.html">Organização</a>
-              <li class="nav-item "> <a class="nav-link" href="../pt/patrocinadores.html">Patrocinador</a>
-                <li class="nav-item "> <a class="nav-link" href="../pt/buenos-aires.html">Buenos Aires</a>
-                 
-          </ul>
-          <a class="text-primary" href="../en/track-students.html">EN</a> &nbsp; <a>|</a> &nbsp;
-        <a class="text-primary"  href="../es/track-students.html">ES</a>&emsp;<br>
-        <a  href="inscricao.html" class="btn btn-outline-primary">Inscrição</a>&emsp;
-
-      </div>
-    </div>
-  </nav>
-</header>
-  <!-- /navigation -->
+    <!-- Navigation -->
+    <header class="navigation bg-tertiary">
+      <div id="navbar"></div>
+  
+      <script>
+        $(function(){
+          $('#navbar').load('navbar.html')
+        })
+        
+  
+        document.getElementById('change-lang').innerHTML = 'Chau'
+      </script>
+    </header>
 
 
   <br>
