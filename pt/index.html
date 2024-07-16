@@ -28,71 +28,25 @@
 
   <!-- # Main Style Sheet -->
   <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
+  <!-- Navigation -->
+  <header class="navigation bg-tertiary">
+    <div id="navbar"></div>
+    <div id="change-lang"></div>
 
+    <script>
+      $(function(){
+        $('#navbar').load('navbar.html')
+      })
+      
 
-<header class="navigation bg-tertiary">
-  <nav class="navbar navbar-expand-xl navbar-light text-center py-3">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img loading="preload" decoding="async" class="img-fluid" width="130" src="../images/wer/logo_wer2024-h.png"
-             alt="Wer en Buenos Aires">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
-              class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-1 mb-lg-0">
-          <li class="nav-item aling-le"> <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">Chamadas</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                </li>
-                <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-regular.html">Regular Research Track (WER-RT)</a>
-                </li>
-                <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-requirements-tools.html">Software Requirements Tools Track
-                    (WER-SRTT)</a>
-                </li>
-                <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-industry.html">Industry Track
-                    (WER-IT)</a>
-                </li>
-                <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-masters-doctoral.html">Master's and Doctoral Track
-                    (WER-MDT)</a>
-                </li>
-                <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-tutorial.html">Tutorial Track (WER-TT)</a>
-                </li>
-                <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-journal-first.html">Journal First Track (WER-JFT)</a>
-                </li>
-                <li><a class="dropdown-item " href="https://organizacaower.github.io/wer2024/pt/track-students.html">Student Track (WER-ST)</a>
-                </li>
-
-              </ul>
-            </li>
-            </li>
-            <li class="nav-item "> <a class="nav-link" href="../pt/artigos-aceitos.html">Artigos aceitos</a>
-              <li class="nav-item "> <a class="nav-link" href="../pt/programacao.html">Programação</a>
-            <li class="nav-item "> <a class="nav-link" href="https://organizacaower.github.io/wer2024/pt/palestrantes.html">Palestrantes</a>
-            </li>
-            <li class="nav-item "> <a class="nav-link" href="../pt/organizacao.html">Organização</a>
-              <li class="nav-item "> <a class="nav-link" href="../pt/patrocinadores.html">Patrocinador</a>
-              <li class="nav-item "> <a class="nav-link" href="../pt/buenos-aires.html">Buenos Aires</a>
-                
-              </li>
-
-        </ul>
-        <a class="text-primary" href="https://organizacaower.github.io/wer2024/en/index.html">EN</a> &nbsp; <a>|</a> &nbsp;
-        <a class="text-primary"  href="https://organizacaower.github.io/wer2024/es/index.html">ES</a>&emsp;<br>
-        <a  href="inscricao.html" class="btn btn-outline-primary">Inscrição</a>&emsp;
-        <!--  
-          <a href="certificates/" class="btn btn-danger">Certificados</a> -->
-      </div>
-    </div>
-  </nav>
-</header>
+      document.getElementById('change-lang').innerHTML = 'Chau'
+    </script>
+  </header>
+  <!-- /Navigation -->
 
 <section class="bg-tertiary position-relative overflow-hidden">
   <div class="container">
@@ -181,8 +135,7 @@
                 <h5>Zabala 1837, Ciudad Autónoma de Buenos Aires, C1426DQG, Argentina</h5>
                 <p><a class="text-white"
                       href="https://maps.app.goo.gl/eMYohnU6Z9CMSTHV8"
-                      target="_blank">Ver
-                      direções</a></p>
+                      target="_blank">Ver mapa</a></p>
             </div>
           </div>
         </div>
@@ -234,7 +187,7 @@
             <img loading="lazy" decoding="async" src="../images/organization/Graciela Hadad.jpg" alt="Graciela Hadad" class="profile-img">
             <div class="mt-1 mt-sm-0 ms-0 ms-sm-4">
               <h4 class="h4 mb-1">Graciela Hadad - UNO/UB</h4>
-              <p class="mb-0">Local chair</p>
+              <p class="mb-0">Presidente Geral</p>
             </div>
           </div>
           <!-- <div class="content">Lorem ipsum dolor <a href="http://google.com">@reamansimond</a> demina egestas sit
@@ -250,7 +203,7 @@
             <div class="mt-1 mt-sm-0 ms-0 ms-sm-4">
               <h4 class="h4 mb-1">Paula Angeleri - UB</h4>
               <h4 class="h4 mb-1">Leandro Antonelli - UNLP/UAI</h4>
-              <p class="mb-0">Local organiser</p>
+              <p class="mb-0">Presidentes Locais</p>
             </div>
           </div>
           <!-- <div class="content">Lorem ipsum dolor <a href="http://google.com">@reamansimond</a> demina egestas sit
