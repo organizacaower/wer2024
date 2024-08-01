@@ -10097,3 +10097,24 @@ img.profile-img {
   border-radius: 50%;
   width: 110px;
 }
+
+.badge {
+  background: var(--bs-light);
+  font-size: x-small;
+  padding: 2px 3px;
+  border-radius: 2px;
+  color: dark-grey;
+  margin-left: 3px;
+  font-weight: normal;
+  box-shadow: var(--bs-gray) 1px 1px 3px;
+}
+.important-button{
+  background: var(--bs-warning); 
+  padding: 10px 9px; 
+  border-radius: 9px; 
+  font-weight:bold; 
+  color:black;
+}
+.important-button:hover{
+  color: black;
+}
