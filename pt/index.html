@@ -40,6 +40,7 @@
     <script>
       $(function(){
    $('#navbar').load('https://organizacaower.github.io/wer2024/pt/navbar.html', function(response, status, xhr){
+      console.log(status)
       if (status == "error") {
          console.log("Error loading navbar: " + xhr.status + " " + xhr.statusText);
       } else {
