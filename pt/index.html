@@ -39,13 +39,27 @@
 
     <script>
       $(function(){
-   $('#navbar').load('navbar.html', function(response, status, xhr){
+   $('#navbar').load('https://organizacaower.github.io/wer2024/pt/navbar.html', function(response, status, xhr){
       if (status == "error") {
          console.log("Error loading navbar: " + xhr.status + " " + xhr.statusText);
+      } else {
+         console.log("Navbar loaded successfully:", response);
+
+         // Re-inicializar cualquier script necesario aquí
+         $(".nav-tabs a").click(function (e) {
+            e.preventDefault();
+            var tab = $(this).parent(),
+                tabIndex = tab.index(),
+                tabPanel = $(this).closest(".code-tabs"),
+                tabPane = tabPanel.find(".tab-pane").eq(tabIndex);
+
+            tabPanel.find(".active").removeClass("active");
+            tab.addClass("active");
+            tabPane.addClass("active");
+         });
       }
    });
 });
-
       document.getElementById('change-lang').innerHTML = 'Chau'
     </script>
   </header>
