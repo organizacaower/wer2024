@@ -38,29 +38,19 @@
     <header class="navigation bg-tertiary">
       <div id="navbar"></div>
   
-      <script>
-        $(function(){
-          console.log("ARRANCA")
-          $('#navbar').load('navbar.html', function(response, status, xhr) {
-    if (status === "error") {
-        console.log("Error al cargar el navbar: " + xhr.status + " " + xhr.statusText);
-    } else if (status === "success") {
-        console.log("Navbar cargado correctamente.");
-    } else if (status === "timeout") {
-        console.log("El tiempo de espera para cargar el navbar ha expirado.");
-    } else if (status === "parsererror") {
-        console.log("Error al analizar el contenido de navbar.html.");
-    } else {
-        console.log("Estado de carga desconocido: " + status);
-    }
-});
-          console.log("TERMINA")
-        })
-  
-        document.getElementById('change-lang').innerHTML = 'Chau'
-      </script>
-    </header>
-    <!-- /Navigation -->
+<!-- Navigation -->
+<header class="navigation bg-tertiary">
+  <div id="navbar"></div>
+
+  <script>
+    $(function(){
+      $('#navbar').load('navbar.html')
+    })
+
+    document.getElementById('change-lang').innerHTML = 'Chau'
+  </script>
+</header>
+<!-- /Navigation -->
 
 <section class="bg-tertiary position-relative overflow-hidden">
   <div class="container">
