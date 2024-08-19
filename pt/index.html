@@ -34,38 +34,33 @@
 </head>
 
 <body>
-  <!-- Navigation -->
-  <header class="navigation bg-tertiary">
-    <div id="navbar"></div>
-
-    <script>
-      $(function(){
-   $('#navbar').load('https://organizacaower.github.io/wer2024/pt/navbar.html', function(response, status, xhr){
-      console.log(status)
-      if (status == "error") {
-         console.log("Error loading navbar: " + xhr.status + " " + xhr.statusText);
-      } else {
-         console.log("Navbar loaded successfully:", response);
-
-         // Re-inicializar cualquier script necesario aquí
-         $(".nav-tabs a").click(function (e) {
-            e.preventDefault();
-            var tab = $(this).parent(),
-                tabIndex = tab.index(),
-                tabPanel = $(this).closest(".code-tabs"),
-                tabPane = tabPanel.find(".tab-pane").eq(tabIndex);
-
-            tabPanel.find(".active").removeClass("active");
-            tab.addClass("active");
-            tabPane.addClass("active");
-         });
-      }
-   });
+    <!-- Navigation -->
+    <header class="navigation bg-tertiary">
+      <div id="navbar"></div>
+  
+      <script>
+        $(function(){
+          console.log("ARRANCA")
+          $('#navbar').load('navbar.html', function(response, status, xhr) {
+    if (status === "error") {
+        console.log("Error al cargar el navbar: " + xhr.status + " " + xhr.statusText);
+    } else if (status === "success") {
+        console.log("Navbar cargado correctamente.");
+    } else if (status === "timeout") {
+        console.log("El tiempo de espera para cargar el navbar ha expirado.");
+    } else if (status === "parsererror") {
+        console.log("Error al analizar el contenido de navbar.html.");
+    } else {
+        console.log("Estado de carga desconocido: " + status);
+    }
 });
-      document.getElementById('change-lang').innerHTML = 'Chau'
-    </script>
-  </header>
-  <!-- /Navigation -->
+          console.log("TERMINA")
+        })
+  
+        document.getElementById('change-lang').innerHTML = 'Chau'
+      </script>
+    </header>
+    <!-- /Navigation -->
 
 <section class="bg-tertiary position-relative overflow-hidden">
   <div class="container">
